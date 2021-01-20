@@ -1,0 +1,46 @@
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+nav li {
+  margin-left: 15px;
+}
+nav a:link {
+  padding: 6px;
+  background-color: rgb(240, 219, 195);
+  color: rgb(87, 23, 129);
+  text-decoration: none;
+  border: 2px solid rgb(87, 23, 129);
+}
+.sublist {
+  flex-direction: column;
+  position: absolute;
+  margin-top: 6px;
+  display: none;
+}
+.itemWithDropdown:hover .sublist {
+  display: flex;
+}
+.sublist a:link {
+  display: block;
+  border: none;
+  padding: 6px; 
+  background-color: rgb(235, 207, 176);
+}
+.sublist li {
+  margin-left: 0;
+}
+nav a:hover {
+  color: rgb(6, 75, 60);
+  text-decoration: underline;
+  border: 2px solid rgb(6, 75, 60);
+}
+.sublist a:hover {
+  color: rgb(5, 32, 88);
+  text-decoration: underline;
+}
+html {
+  background-color: rgb(119, 144, 194);
+}
